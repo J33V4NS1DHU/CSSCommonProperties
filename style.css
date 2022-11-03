@@ -1,9 +1,26 @@
-section{
-    height:80vh;
-    border: 1px solid black;
-
+div {
+  transition: background-color 300mms;
 }
 
-p{
-    color:red;
+div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  animation: float 2000ms infinite alternate-reverse;
+  transition: all 300mms;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
